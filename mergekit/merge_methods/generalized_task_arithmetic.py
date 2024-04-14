@@ -54,8 +54,7 @@ class GeneralizedTaskArithmeticMerge(MergeMethod, BaseModel, frozen=True):
                 name="smooth", required=False, default_value=self.default_smooth
             ),
             ConfigParameterDef(
-                name="adjusted", required=False, default_value=0
-            ),
+                name="adjusted", required=False, default_value=False),
         ]
 
     def tensor_parameters(self) -> List[ConfigParameterDef]:
